@@ -1,23 +1,34 @@
 import logo from './logo.svg';
-import './App.css';
+import './App.less';
+import { Layout, Image, Button } from 'antd';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{
+      width: "100%",
+      backgroundColor: "blue",
+      flexDirection: "column"
+    }}>
+      <div style={{
+        width: "100%",
+        height: "80px",
+        backgroundColor: "yellow"
+      }}> 
+        标题内容
+      </div>
+      <div style={{
+        width: "100%",
+        height: "820px",
+        flexDirection: "row"
+      }}>
+        <div display={"d"}> 
+          输入内容
+        </div>
+
+        <div> 
+          结果展示部分
+        </div>
+      </div>
     </div>
   );
 }
